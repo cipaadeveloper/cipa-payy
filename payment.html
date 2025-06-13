@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Payment Cipa</title>
+  <style>
+    body {
+      background-color: #000;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 30px 20px;
+    }
+    h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    img {
+      width: 200px;
+      border-radius: 12px;
+      margin: 20px 0;
+    }
+    .label {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    .copy-btn {
+      background-color: #00bcd4;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      margin: 6px 0;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .copy-btn:hover {
+      background-color: #0196a9;
+    }
+    .nav-buttons {
+      margin-top: 20px;
+    }
+    .nav-buttons a {
+      text-decoration: none;
+      background-color: #00bcd4;
+      color: white;
+      padding: 10px 15px;
+      margin: 5px;
+      border-radius: 8px;
+      display: inline-block;
+      font-size: 14px;
+    }
+    .nav-buttons a:hover {
+      background-color: #0196a9;
+    }
+    footer {
+      margin-top: 20px;
+      font-size: 13px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <h1>Payment Cipa</h1>
+  <p>Untuk payment qris bisa minta ke cipa yaa</p>
+  <img src="your-image.jpg" alt="Foto Cipa" />
+
+  <div class="label">Dana:</div>
+  <button class="copy-btn" onclick="copyText('6283892597828')">6283892597828 (Salin)</button>
+
+  <div class="label">Gopay:</div>
+  <button class="copy-btn" onclick="copyText('6283892597828')">6283892597828 (Salin)</button>
+
+  <div class="nav-buttons">
+    <a href="https://wa.me/6283892597828" target="_blank">WhatsApp</a>
+    <a href="https://t.me/yourusername" target="_blank">Telegram</a>
+    <a href="index.html">Back</a>
+  </div>
+
+  <footer>
+    Terimakasih yang sudah membuka website payment ku :3
+  </footer>
+
+  <script>
+    function copyText(text) {
+      navigator.clipboard.writeText(text).then(() => {
+        alert("Berhasil disalin: " + text);
+      });
+    }
+  </script>
+</body>
+</html>
